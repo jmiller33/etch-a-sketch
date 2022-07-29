@@ -1,0 +1,12 @@
+#container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+}
+
+.square-hovered {
+    background-color: black;
+}
