@@ -10,7 +10,7 @@ newNumberSquaresButton.textContent = "Set a new number of squares"
 controller.appendChild(resetButton);
 controller.appendChild(newNumberSquaresButton);
 
-const width = 640;
+const width = 620;
 
 let squares = 16;
 
@@ -48,9 +48,7 @@ makeGrid(squares);
 newNumberSquaresButton.addEventListener ('click', () => {
     let squares = Number(prompt("How many squares wide do you want the sides to be?"));
     if (squares>100) {
-        let squares = Number(prompt("Pick a number less than or equal to 100"));
-        clearScreen();
-        makeGrid(squares);
+        alert("Pick a number less than or equal to 100");
     } else {
         clearScreen();
         makeGrid (squares);
